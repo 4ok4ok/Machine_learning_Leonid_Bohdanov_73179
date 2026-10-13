@@ -1,0 +1,3 @@
+Forward (ms): 0.1167
+Backward (ms): 0.1464
+Ratio: 1.26
