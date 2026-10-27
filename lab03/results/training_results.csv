@@ -1,0 +1,4 @@
+Model,Test_Accuracy,Train_Time_s
+MLP,87.75,290.61
+CNN,89.94,437.78
+Attention,83.78,363.54

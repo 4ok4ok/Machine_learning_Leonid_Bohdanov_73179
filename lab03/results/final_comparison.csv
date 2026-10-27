@@ -1,0 +1,4 @@
+Model,Parameters,thop_MACs,thop_FLOPs,Latency_Batch1_ms,Latency_Batch128_ms,Test_Accuracy,Train_Time_s
+MLP,235146,234752,469504,0.822,4.863,87.75,290.61
+CNN,20490,1031744,2063488,2.368,74.236,89.94,437.78
+Attention,70794,1187328,2374656,3.067,24.549,83.78,363.54
