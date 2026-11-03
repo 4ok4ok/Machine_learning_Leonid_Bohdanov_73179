@@ -1,0 +1,6 @@
+2026-11-03 06:22:26,551 INFO INGEST rows=48842 cols=15
+2026-11-03 06:22:27,073 INFO SPLIT train=34189 test=14653; removed 24 exact duplicates from train
+2026-11-03 06:22:29,218 INFO METRICS {'without_derived': {'accuracy': 0.8539548215382515, 'f1': 0.6601016518424396}, 'with_derived': {'accuracy': 0.8577765645260357, 'f1': 0.6696258719086874}}
+2026-11-03 06:22:29,295 INFO LABEL AUDIT {'conflict_groups': 5, 'conflict_rows': 10, 'sample_size': 50, 'sample_rows_flagged': 0}
+2026-11-03 06:22:29,317 INFO PROCESSED SHA256 e13af11f6bea0de8b9a74e07029ae25b91cb45e04becbf6cc8e8cfe66c0e77f9
+2026-11-03 06:22:29,325 INFO DONE

@@ -1,0 +1,27 @@
+config:
+  seed: 42
+  dataset:
+    name: adult
+    version: 2
+    expected_rows: 48842
+    expected_cols: 15
+  split:
+    test_size: 0.3
+  cleaning:
+    lower_quantile: 0.01
+    upper_quantile: 0.99
+  audit:
+    sample_size: 50
+  paths:
+    raw: data/raw/adult_raw.csv
+    results: results
+    data_card: data_card.md
+processed_sha256: e13af11f6bea0de8b9a74e07029ae25b91cb45e04becbf6cc8e8cfe66c0e77f9
+files_hashed:
+- train_processed.csv
+- test_processed.csv
+versions:
+  python: 3.12.10
+  sklearn: 1.9.1
+  pandas: 3.1.0
+  numpy: 2.5.4

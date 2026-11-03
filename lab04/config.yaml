@@ -1,0 +1,17 @@
+seed: 42
+dataset:
+  name: adult
+  version: 2
+  expected_rows: 48842
+  expected_cols: 15
+split:
+  test_size: 0.3
+cleaning:
+  lower_quantile: 0.01
+  upper_quantile: 0.99
+audit:
+  sample_size: 50
+paths:
+  raw: data/raw/adult_raw.csv
+  results: results
+  data_card: data_card.md

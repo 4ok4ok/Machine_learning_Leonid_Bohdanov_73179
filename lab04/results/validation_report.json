@@ -1,0 +1,33 @@
+{
+  "rows": 48842,
+  "cols": 15,
+  "n_violations": 0,
+  "violations": [],
+  "missing_per_column": {
+    "workclass": 2799,
+    "occupation": 2809,
+    "native-country": 857
+  },
+  "missing_encoding": {
+    "NaN_cells": 6465,
+    "question_mark_cells": 0
+  },
+  "exact_duplicate_rows": 52,
+  "dtypes": {
+    "age": "int64",
+    "workclass": "category",
+    "fnlwgt": "int64",
+    "education": "category",
+    "education-num": "int64",
+    "marital-status": "category",
+    "occupation": "category",
+    "relationship": "category",
+    "race": "category",
+    "sex": "category",
+    "capital-gain": "int64",
+    "capital-loss": "int64",
+    "hours-per-week": "int64",
+    "native-country": "category",
+    "income": "category"
+  }
+}
