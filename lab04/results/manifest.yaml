@@ -13,15 +13,15 @@ config:
   audit:
     sample_size: 50
   paths:
-    raw: data/raw/adult_raw.csv
+    raw: ../data/raw/adult_raw.csv
     results: results
-    data_card: data_card.md
+    data_card: results/data_card.md
 processed_sha256: e13af11f6bea0de8b9a74e07029ae25b91cb45e04becbf6cc8e8cfe66c0e77f9
 files_hashed:
 - train_processed.csv
 - test_processed.csv
 versions:
-  python: 3.12.10
+  python: 3.11.8
   sklearn: 1.9.1
   pandas: 3.1.0
-  numpy: 2.5.4
+  numpy: 2.4.6

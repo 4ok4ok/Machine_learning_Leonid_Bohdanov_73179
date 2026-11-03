@@ -1,4 +1,4 @@
-"""Lab 4 pipeline. Run:  python run_pipeline.py
+"""Lab 4 pipeline. Run from lab04/src:  python run_pipeline.py
 Steps: ingest -> validate -> split -> clean (train-fit) -> derived features + LR
        -> label audit -> SHA256 + manifest -> data card."""
 import hashlib
@@ -23,7 +23,8 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from preprocessing import (CATEGORICAL, DERIVED, NUMERIC, POSITIVE, TARGET,
                            AdultPreprocessor, add_derived)
 
-ROOT = Path(__file__).resolve().parent
+SRC = Path(__file__).resolve().parent
+ROOT = SRC.parent                       # lab04/; paths in config.yaml are relative to it
 log = logging.getLogger("lab4")
 
 RANGES = {"age": (17, 90), "hours-per-week": (1, 99),
@@ -224,7 +225,7 @@ individuals.
 
 # ------------------------------------------------------------------------ main
 def main(cfg=None):
-    cfg = cfg or yaml.safe_load((ROOT / "config.yaml").read_text())
+    cfg = cfg or yaml.safe_load((SRC / "config.yaml").read_text())
     out = ROOT / cfg["paths"]["results"]
     out.mkdir(parents=True, exist_ok=True)
     logging.basicConfig(level=logging.INFO, force=True,

@@ -12,6 +12,6 @@ cleaning:
 audit:
   sample_size: 50
 paths:
-  raw: data/raw/adult_raw.csv
+  raw: ../data/raw/adult_raw.csv
   results: results
-  data_card: data_card.md
+  data_card: results/data_card.md
