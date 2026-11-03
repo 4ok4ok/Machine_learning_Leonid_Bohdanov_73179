@@ -1,0 +1,95 @@
+{
+  "task4": {
+    "diff_vs_numerical": 1.0455929455588375e-09,
+    "diff_vs_torch": 0.0
+  },
+  "task5": {
+    "mine_median_s": 7.021317799997632,
+    "mine_loss_first": 0.7716303459848394,
+    "mine_loss_last": 0.2802252660695948,
+    "mine_acc": 0.89,
+    "torch_median_s": 0.04607400000168127,
+    "torch_loss_last": 0.2802252660695948,
+    "torch_acc": 0.89,
+    "loss_diff": 3.3306690738754696e-16,
+    "speedup": 152.39219081784563
+  },
+  "task6": {
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "tensors": {
+      "input": [
+        [
+          64,
+          16
+        ],
+        "torch.float32",
+        true
+      ],
+      "input.t()": [
+        [
+          16,
+          64
+        ],
+        "torch.float32",
+        false
+      ],
+      "0.weight": [
+        [
+          32,
+          16
+        ],
+        "torch.float32",
+        true
+      ],
+      "0.bias": [
+        [
+          32
+        ],
+        "torch.float32",
+        true
+      ],
+      "2.weight": [
+        [
+          1,
+          32
+        ],
+        "torch.float32",
+        true
+      ],
+      "2.bias": [
+        [
+          1
+        ],
+        "torch.float32",
+        true
+      ]
+    },
+    "eager_vs_compiled": {
+      "mlp": {
+        "eager_us": 2840.61649999785,
+        "compiled_us": 2567.555000005086,
+        "mode": "jit.trace",
+        "speedup": 1.1063507889771487,
+        "compile_s": 0.06354389999978594
+      },
+      "pointwise": {
+        "eager_us": 9191.446000004362,
+        "compiled_us": 10225.813000015478,
+        "mode": "jit.trace",
+        "speedup": 0.8988474559421779,
+        "compile_s": 0.12749429999894346
+      }
+    },
+    "contiguity_ms": {
+      "a + 1": 2.562900001066737,
+      "a.t() + 1": 2.5638000006438233,
+      "a.t().contiguous() + 1": 18.05574999889359,
+      "a[:, ::2] + 1": 1.7447500013076933,
+      "a.sum(1)": 0.9643499997764593,
+      "a.t().sum(1)": 2.2047999991627876,
+      "a @ a": 173.450350001076,
+      "a.t() @ a": 179.43790000026638
+    }
+  }
+}
