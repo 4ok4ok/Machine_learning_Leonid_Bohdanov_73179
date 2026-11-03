@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 mlruns/
 emissions.csv
+
+.idea/
+*/.idea/
